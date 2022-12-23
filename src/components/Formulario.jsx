@@ -1,7 +1,7 @@
-import useFormulario from "../hooks/useFormulario"
 import Swal from 'sweetalert2'
-const Formulario = ({setPersonaje}) => {
+import useFormulario from "../hooks/useFormulario"
 
+const Formulario = ({setPersonaje}) => {
     const [inpust, handleChange, reset] = useFormulario({
         nombre: ""
     })
@@ -23,8 +23,8 @@ const Formulario = ({setPersonaje}) => {
         reset()
     }
 
-  return (
-      <form onSubmit={handleSubmit}>
+    return(
+    <form onSubmit={handleSubmit}>
         <input 
             type="text"
             name="nombre"
@@ -40,8 +40,7 @@ const Formulario = ({setPersonaje}) => {
             > Buscar
             </button>
         </div>
-      </form>
-  )
+    </form>)
 }
 
 export default Formulario

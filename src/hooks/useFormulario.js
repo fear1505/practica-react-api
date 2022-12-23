@@ -10,11 +10,11 @@ const useFormulario = (initialState = {}) => {
       ...old,
       [name]: type === "checkbox" ? checked : value,
     }))
-    }
+  }
 
-    const reset = () => {
-      setInputs(initialState)
-    }
+  const reset = () => {
+    setInputs(initialState)
+  }
 
   return [inpust, handleChange, reset]
 }

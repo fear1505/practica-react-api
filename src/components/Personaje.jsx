@@ -10,8 +10,7 @@ const Personaje = ({personaje}) => {
             <p>{species}</p>
         </div>
       </div>
-    </div>
-  )
+    </div>)
 }
 
 export default Personaje
